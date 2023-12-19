@@ -2,6 +2,9 @@ const button = document.querySelector('#check')
 const inputText = document.querySelector('#input-text')
 const resultado = document.querySelector('#resultado')
 
+document.addEventListener('DOMContentLoaded', function() {
+    inputText.focus(); 
+  });
 button.addEventListener('click', inputFunction)
 
 function inputFunction(){
