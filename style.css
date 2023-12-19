@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #8870ca, #9a92e9);
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    margin-top: 30px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+nav .buttons {
+    display: flex;
+}
+
+nav button {
+    padding: 10px 11px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.header nav .buttons {
+    margin-left: auto; 
+}
+
+.header h1 {
+    margin-left: 40px;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    text-shadow: 2px 1px 4px rgba(70, 70, 70, 0.5);
+}
+
+.btn-red {
+    background: #ee3a3d
+}
+
+.btn-green{
+    background: #10E585
+}
+
+.btn-blue {
+    background: #5116f3
+}
+
+
+.container {
+    width: 100%;
+    max-width: 41.25rem;
+    background-color: white;
+    padding: 6em 3em;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 3.5em rgba(0, 9, 50, 0.3);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.titulo {
+    color: #170239;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+    margin: 1em 0 1em 0;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #dbdbdb;
+    color: #170239;
+    padding: 1em 0;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+input::placeholder{
+    color: #acaaaa;
+}
+
+input:focus{
+    border-bottom: 2px solid #baafda;
+}
+
+#check {
+    background-color: #a286ee;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#check:hover{
+    background-color: #8d6de4 ;
+}
+
+#check:active {
+    transform: scale(0.9);
+}
+
+p{
+    text-align: center;
+    font-weight: 400px;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+
+.exito {
+    color: rgb(13, 204, 124);
+    animation: pop 0.4s;
+}
+
+
+.error {
+    color: #f52a3b;
+    animation: pop 0.4s;
+}
+
+@keyframes pop {
+    0%{
+        transform:scale(0)
+    }
+    100%{
+        transform: scale(1);
+    }
+}
