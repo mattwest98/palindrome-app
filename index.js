@@ -12,7 +12,8 @@ function inputFunction(){
         return
     }
 
-    const limpiarTexto = text.replace(/[^a-Za-z0-9]/g, '').toLowerCase()
+    const limpiarTexto = texto.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
 
     const esPalindromo = limpiarTexto === limpiarTexto.split('').reverse('').join('')
 
