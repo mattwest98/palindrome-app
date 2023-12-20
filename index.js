@@ -24,6 +24,11 @@ function inputFunction(){
 
     const limpiarTexto = texto.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
 
+    if (limpiarTexto.length < 2 || !/[a-zA-Z0-9]/.test(limpiarTexto)) {
+        resultado.classList.remove('error', 'exito');
+        resultado.innerHTML = 'Ingrese una palabra o frase válida para poder comprobar!';
+        return;
+    }
 
     const esPalindromo = limpiarTexto === limpiarTexto.split('').reverse('').join('')
 
